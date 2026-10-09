@@ -1,0 +1,8 @@
+{
+  "name": "abe-widget-demo",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@vercel/functions": "^3.0.0"
+  }
+}
