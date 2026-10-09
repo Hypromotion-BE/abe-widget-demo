@@ -119,3 +119,10 @@ a.card:hover { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 var(--ink
 /* Footer */
 .site-footer { background: var(--ink); color: #c9c6d8; font-size: 0.85rem; padding: 26px 0; }
 .site-footer strong { color: #fff; }
+
+/* Demo disclaimer banner */
+.demo-banner { background: #e3f0ff; color: #0b3a6b; border-bottom: 1px solid #b6d4f5; font-size: 0.85rem; line-height: 1.4; }
+.demo-banner .wrap { display: flex; align-items: flex-start; justify-content: center; gap: 8px; padding-top: 8px; padding-bottom: 8px; }
+.demo-banner-icon { flex: none; width: 18px; height: 18px; margin-top: 1px; }
+.demo-banner p { margin: 0; }
+@media (max-width: 600px) { .demo-banner { font-size: 0.78rem; } .demo-banner .wrap { justify-content: flex-start; } }
