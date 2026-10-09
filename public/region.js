@@ -36,5 +36,6 @@
   widget.src = '/widget/abe-widget.js';
   widget.defer = true;
   widget.setAttribute('data-region', region);
+  widget.setAttribute('data-base-url', window.location.origin);
   document.body.appendChild(widget);
 })();
