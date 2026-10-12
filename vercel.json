@@ -1,5 +1,24 @@
 {
   "outputDirectory": "public",
+  "trailingSlash": true,
+  "redirects": [
+    {"source":"/","has":[{"type":"query","key":"region","value":"UK|uk"}],"destination":"/uk/","permanent":false},
+    {"source":"/index.html","has":[{"type":"query","key":"region","value":"UK|uk"}],"destination":"/uk/","permanent":false},
+    {"source":"/","has":[{"type":"query","key":"region","value":"EU|eu"}],"destination":"/de/","permanent":false},
+    {"source":"/index.html","has":[{"type":"query","key":"region","value":"EU|eu"}],"destination":"/de/","permanent":false},
+    {"source":"/","has":[{"type":"query","key":"region","value":"US|us"}],"destination":"/us/","permanent":false},
+    {"source":"/index.html","has":[{"type":"query","key":"region","value":"US|us"}],"destination":"/us/","permanent":false},
+    {"source":"/gadget-gifts.html","has":[{"type":"query","key":"region","value":"UK|uk"}],"destination":"/uk/gadget-gifts/","permanent":false},
+    {"source":"/gadget-gifts.html","has":[{"type":"query","key":"region","value":"EU|eu"}],"destination":"/de/gadget-gifts/","permanent":false},
+    {"source":"/gadget-gifts.html","has":[{"type":"query","key":"region","value":"US|us"}],"destination":"/us/gadget-gifts/","permanent":false},
+    {"source":"/kitchen-gear.html","has":[{"type":"query","key":"region","value":"UK|uk"}],"destination":"/uk/kitchen-gear/","permanent":false},
+    {"source":"/kitchen-gear.html","has":[{"type":"query","key":"region","value":"EU|eu"}],"destination":"/de/kitchen-gear/","permanent":false},
+    {"source":"/kitchen-gear.html","has":[{"type":"query","key":"region","value":"US|us"}],"destination":"/us/kitchen-gear/","permanent":false},
+    {"source":"/","destination":"/us/","permanent":false},
+    {"source":"/index.html","destination":"/us/","permanent":false},
+    {"source":"/gadget-gifts.html","destination":"/us/gadget-gifts/","permanent":false},
+    {"source":"/kitchen-gear.html","destination":"/us/kitchen-gear/","permanent":false}
+  ],
   "headers": [
     {
       "source": "/(.*)",
