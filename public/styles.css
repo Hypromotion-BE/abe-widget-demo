@@ -126,3 +126,22 @@ a.card:hover { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 var(--ink
 .demo-banner-icon { flex: none; width: 18px; height: 18px; margin-top: 1px; }
 .demo-banner p { margin: 0; }
 @media (max-width: 600px) { .demo-banner { font-size: 0.78rem; } .demo-banner .wrap { justify-content: flex-start; } }
+
+/* Widget environment control */
+.env-switch {
+  position: fixed; top: 6px; right: 8px; z-index: 1000;
+  display: inline-flex; padding: 2px; gap: 2px;
+  background: #fff; border: 2px solid var(--ink); border-radius: 999px;
+  box-shadow: 2px 2px 0 var(--ink); font-family: var(--font);
+}
+.env-switch button {
+  appearance: none; border: 0; background: transparent; color: var(--ink); cursor: pointer;
+  font: 800 0.68rem/1 var(--font); letter-spacing: 0.06em; padding: 5px 10px; border-radius: 999px;
+}
+.env-switch button:hover { background: #f0eee4; }
+.env-switch button[aria-pressed="true"] { background: var(--ink); color: var(--yellow); cursor: default; }
+.env-switch button:focus-visible { outline: 2px solid var(--blue); outline-offset: 1px; }
+/* Keep the banner and header content clear of the control */
+@media (max-width: 1380px) {
+  .demo-banner .wrap, .site-header .wrap { padding-right: 120px; }
+}
